@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Student 1 Page
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <style>
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+        </style>
+    </head>
+    <body>
+         <center>
+             <h1>Welcome Student 1</h1>
+             <h1>Alumini Booking Center</h1>
+             <form action="data.php" method="POST">
+             <label>Name of the Student</label>
+             <input type="text" placeholder="Enter your Name" name="name" ><br><br>
+             <label>Contact</label>
+             <input type="number" placeholder="Enter your Name" name="contact" ><br><br>
+             <label>Date</label>
+             <input type="date" name="date"><br><br>
+             <label>Time Slot</label>
+             <select name="time">
+                 <option value="">---</option>
+                 <option value="1 PM - 2 PM">1 PM - 2 PM</option>
+                 <option value="4 PM - 5 PM">4 PM - 5 PM</option>
+                 <option value="6 PM - 7 PM">6 PM - 7 PM</option>
+             </select><br><br>
+             <input type="submit" value="Submit">
+             <input type="reset" value="Clear"><br><br>
+             <a href="show.php?varname=student1" >Show Booked Events</a><br><br>
+             <a href="index.html" >Logout</a>
+             </form>
+         </center>
+    </body>
+</html>
